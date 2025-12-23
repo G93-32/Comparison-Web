@@ -25,6 +25,44 @@
     <main>
         <div class="container">
             <h1>Compare Headphones</h1>
+            <div class="filter-section">
+                <h2>Filters</h2>
+                <div class="filter-group">
+                    <label for="headphone-brand">Brand</label>
+                    <select id="headphone-brand">
+                        <option>All Brands</option>
+                        <option>Sony</option>
+                        <option>Bose</option>
+                        <option>Sennheiser</option>
+                        <option>Apple</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Type</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="over-ear" name="type" value="over-ear">
+                            <label for="over-ear">Over-Ear</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="on-ear" name="type" value="on-ear">
+                            <label for="on-ear">On-Ear</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="in-ear" name="type" value="in-ear">
+                            <label for="in-ear">In-Ear</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="noise-cancelling" name="type" value="noise-cancelling">
+                            <label for="noise-cancelling">Noise-Cancelling</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-buttons">
+                    <button class="reset-btn">Reset</button>
+                    <button class="apply-btn">Apply Filters</button>
+                </div>
+            </div>
             <div class="content-placeholder">
                 <p>Product comparison table and filters will be generated here by JavaScript.</p>
             </div>

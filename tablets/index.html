@@ -25,6 +25,40 @@
     <main>
         <div class="container">
             <h1>Compare Tablets</h1>
+            <div class="filter-section">
+                <h2>Filters</h2>
+                <div class="filter-group">
+                    <label for="tablet-brand">Brand</label>
+                    <select id="tablet-brand">
+                        <option>All Brands</option>
+                        <option>Apple</option>
+                        <option>Samsung</option>
+                        <option>Microsoft</option>
+                        <option>Lenovo</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Features</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="cellular" name="feature" value="cellular">
+                            <label for="cellular">Cellular</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="stylus" name="feature" value="stylus">
+                            <label for="stylus">Stylus Support</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="keyboard" name="feature" value="keyboard">
+                            <label for="keyboard">Keyboard Compatible</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-buttons">
+                    <button class="reset-btn">Reset</button>
+                    <button class="apply-btn">Apply Filters</button>
+                </div>
+            </div>
             <div class="content-placeholder">
                 <p>Product comparison table and filters will be generated here by JavaScript.</p>
             </div>

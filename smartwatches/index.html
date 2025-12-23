@@ -25,6 +25,44 @@
     <main>
         <div class="container">
             <h1>Compare Smartwatches</h1>
+            <div class="filter-section">
+                <h2>Filters</h2>
+                <div class="filter-group">
+                    <label for="smartwatch-brand">Brand</label>
+                    <select id="smartwatch-brand">
+                        <option>All Brands</option>
+                        <option>Apple</option>
+                        <option>Samsung</option>
+                        <option>Garmin</option>
+                        <option>Fitbit</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Features</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gps" name="feature" value="gps">
+                            <label for="gps">GPS</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="heart-rate" name="feature" value="heart-rate">
+                            <label for="heart-rate">Heart Rate Monitor</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sleep-tracking" name="feature" value="sleep-tracking">
+                            <label for="sleep-tracking">Sleep Tracking</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="waterproof" name="feature" value="waterproof">
+                            <label for="waterproof">Waterproof</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-buttons">
+                    <button class="reset-btn">Reset</button>
+                    <button class="apply-btn">Apply Filters</button>
+                </div>
+            </div>
             <div class="content-placeholder">
                 <p>Product comparison table and filters will be generated here by JavaScript.</p>
             </div>

@@ -25,6 +25,44 @@
     <main>
         <div class="container">
             <h1>Compare Phones</h1>
+            <div class="filter-section">
+                <h2>Filters</h2>
+                <div class="filter-group">
+                    <label for="phone-brand">Brand</label>
+                    <select id="phone-brand">
+                        <option>All Brands</option>
+                        <option>Apple</option>
+                        <option>Samsung</option>
+                        <option>Google</option>
+                        <option>OnePlus</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Features</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="5g" name="feature" value="5g">
+                            <label for="5g">5G</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="oled" name="feature" value="oled">
+                            <label for="oled">OLED Display</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="wireless" name="feature" value="wireless">
+                            <label for="wireless">Wireless Charging</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="water-resistant" name="feature" value="water-resistant">
+                            <label for="water-resistant">Water Resistant</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-buttons">
+                    <button class="reset-btn">Reset</button>
+                    <button class="apply-btn">Apply Filters</button>
+                </div>
+            </div>
             <div class="content-placeholder">
                 <p>Product comparison table and filters will be generated here by JavaScript.</p>
             </div>

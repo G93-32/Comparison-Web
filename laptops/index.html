@@ -25,6 +25,44 @@
     <main>
         <div class="container">
             <h1>Compare Laptops</h1>
+            <div class="filter-section">
+                <h2>Filters</h2>
+                <div class="filter-group">
+                    <label for="laptop-brand">Brand</label>
+                    <select id="laptop-brand">
+                        <option>All Brands</option>
+                        <option>Apple</option>
+                        <option>Dell</option>
+                        <option>HP</option>
+                        <option>Lenovo</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Screen Size</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="size-13" name="size" value="13">
+                            <label for="size-13">13-inch</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="size-14" name="size" value="14">
+                            <label for="size-14">14-inch</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="size-15" name="size" value="15">
+                            <label for="size-15">15-inch</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="size-16" name="size" value="16">
+                            <label for="size-16">16-inch or more</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-buttons">
+                    <button class="reset-btn">Reset</button>
+                    <button class="apply-btn">Apply Filters</button>
+                </div>
+            </div>
             <div class="content-placeholder">
                 <p>Product comparison table and filters will be generated here by JavaScript.</p>
             </div>
