@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Example Headphones",
+        "brand": "TechBrand",
+        "type": "Over-ear",
+        "features": {
+            "noise_cancellation": true,
+            "battery_life": "20 hours"
+        }
+    }
+]

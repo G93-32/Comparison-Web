@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Example Phone",
+        "brand": "TechBrand",
+        "specs": {
+            "display": "6.5-inch OLED",
+            "camera": "48MP",
+            "battery": "4000mAh"
+        }
+    }
+]

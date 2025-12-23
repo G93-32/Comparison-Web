@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Example Tablet",
+        "brand": "TechBrand",
+        "specs": {
+            "display": "10.2-inch Retina",
+            "storage": "128GB",
+            "processor": "A14 Bionic"
+        }
+    }
+]

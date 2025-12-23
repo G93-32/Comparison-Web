@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://example.github.io/compareapp/</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://example.github.io/compareapp/phones/</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://example.github.io/compareapp/tablets/</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://example.github.io/compareapp/laptops/</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://example.github.io/compareapp/headphones/</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://example.github.io/compareapp/smartwatches/</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+</urlset>

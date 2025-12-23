@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "Example Laptop",
+        "brand": "TechBrand",
+        "specs": {
+            "display": "15.6-inch FHD",
+            "cpu": "Core i7",
+            "ram": "16GB",
+            "storage": "512GB SSD"
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Example Smartwatch",
+        "brand": "TechBrand",
+        "features": {
+            "display": "1.4-inch AMOLED",
+            "heart_rate_monitor": true,
+            "gps": true
+        }
+    }
+]
