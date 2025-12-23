@@ -3,13 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Homepage - Tech Product Comparison</title>
-    <!-- Google Fonts -->
+
+    <!-- SEO META IMPROVEMENTS -->
+    <title>Compare Phones, Laptops & Tech Deals | CompareApp 2025</title>
+    <meta name="description" content="Instantly compare the latest tech including phones, laptops, tablets, and smartwatches. Find the best prices, specs, and deals to save money with CompareApp." />
+    <link rel="canonical" href="https://www.compareapp.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- PERFORMANCE OPTIMIZATION: Preconnect to required origins -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     <!-- Material Symbols -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -31,6 +40,58 @@
             },
         }
     </script>
+
+    <!-- STRUCTURED DATA (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CompareApp",
+      "url": "https://www.compareapp.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.compareapp.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "CompareApp",
+        "url": "https://www.compareapp.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.compareapp.com/logo.png"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Phones",
+        "item": "https://www.compareapp.com/compare/phones/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tablets",
+        "item": "https://www.compareapp.com/compare/tablets/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Laptops",
+        "item": "https://www.compareapp.com/compare/laptops/"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Smartwatches",
+        "item": "https://www.compareapp.com/compare/smartwatches/"
+      }]
+    }
+    </script>
+
     <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -41,51 +102,53 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden transition-colors duration-200">
     <div class="flex flex-col min-h-screen">
-        <!-- Header -->
+        <!-- SEMANTIC HTML: Header -->
         <header class="sticky top-0 z-50 w-full bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
             <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo -->
-                    <a href="/" class="flex items-center gap-2 cursor-pointer">
+                    <a href="/" class="flex items-center gap-2" aria-label="CompareApp Homepage">
                         <div class="size-8 rounded-lg bg-primary flex items-center justify-center text-white">
-                            <span class="material-symbols-outlined">compare_arrows</span>
+                            <span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span>
                         </div>
-                        <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">CompareApp</h1>
+                        <p class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">CompareApp</p>
                     </a>
-                    <!-- Right Actions -->
-                    <div class="flex items-center gap-3">
-                        <button class="p-2 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
-                            <span class="material-symbols-outlined" style="font-size: 24px;">search</span>
+                    <!-- SEMANTIC HTML: Navigation -->
+                    <nav class="flex items-center gap-3" aria-label="Main navigation">
+                        <button aria-label="Search" class="p-2 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
+                            <span class="material-symbols-outlined" style="font-size: 24px;" aria-hidden="true">search</span>
                         </button>
-                        <button class="p-2 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
-                            <span class="material-symbols-outlined" style="font-size: 24px;">menu</span>
+                        <button aria-label="Open menu" class="p-2 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
+                            <span class="material-symbols-outlined" style="font-size: 24px;" aria-hidden="true">menu</span>
                         </button>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </header>
 
-        <!-- Main Content -->
+        <!-- SEMANTIC HTML: Main Content -->
         <main class="flex-grow">
             <!-- Hero Section -->
             <section class="relative pt-12 pb-16 lg:pt-24 lg:pb-24 overflow-hidden">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl -z-10 opacity-40 dark:opacity-20 pointer-events-none">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl -z-10 opacity-40 dark:opacity-20 pointer-events-none" aria-hidden="true">
                     <div class="absolute top-[-10%] left-[20%] w-72 h-72 bg-blue-300 rounded-full blur-[100px] mix-blend-multiply filter"></div>
                     <div class="absolute top-[10%] right-[20%] w-72 h-72 bg-purple-300 rounded-full blur-[100px] mix-blend-multiply filter"></div>
                 </div>
                 <div class="max-w-[960px] mx-auto px-4 text-center">
+                    <!-- HEADING STRUCTURE: Only one H1 -->
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-6 leading-[1.1]">
-                        Compare &amp; Save Today
+                        Find Your Perfect Tech, Instantly
                     </h1>
+                    <!-- CONTENT QUALITY: Improved hero paragraph -->
                     <p class="text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto">
-                        Compare phones, internet plans, and tech deals in seconds. Save money without the hassle.
+                        Effortlessly compare specs, prices, and features for the latest phones, laptops, tablets, and more. Make informed decisions and find the best tech deals in seconds.
                     </p>
                     <div class="max-w-[600px] mx-auto mb-8 relative z-10">
                         <div class="relative group">
                             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                                <span class="material-symbols-outlined text-slate-400 group-focus-within:text-primary transition-colors">search</span>
+                                <span class="material-symbols-outlined text-slate-400 group-focus-within:text-primary transition-colors" aria-hidden="true">search</span>
                             </div>
-                            <input class="block w-full pl-12 pr-32 py-4 text-base bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-2xl shadow-lg focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500 text-slate-900 dark:text-white" placeholder="What would you like to compare?" type="text" />
+                            <input class="block w-full pl-12 pr-32 py-4 text-base bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-2xl shadow-lg focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500 text-slate-900 dark:text-white" placeholder="Compare phones, laptops, etc." type="search" aria-label="Product search" />
                             <div class="absolute inset-y-1.5 right-1.5">
                                 <button class="h-full px-6 bg-primary hover:bg-blue-600 text-white font-semibold rounded-xl transition-colors shadow-md">
                                     Search
@@ -94,58 +157,59 @@
                         </div>
                     </div>
                     <div class="flex flex-wrap justify-center gap-3">
-                        <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-colors text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm">
-                            <span class="material-symbols-outlined text-[18px]">laptop_mac</span> Laptops
-                        </button>
-                        <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-colors text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm">
-                            <span class="material-symbols-outlined text-[18px]">tablet_mac</span> Tablets
-                        </button>
-                        <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-colors text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm">
-                            <span class="material-symbols-outlined text-[18px]">smartphone</span> Phones
-                        </button>
+                        <a href="/compare/laptops/" class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-colors text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm">
+                            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">laptop_mac</span> Compare Laptops
+                        </a>
+                        <a href="/compare/tablets/" class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-colors text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm">
+                            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">tablet_mac</span> Compare Tablets
+                        </a>
+                        <a href="/compare/phones/" class="flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-colors text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm">
+                            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">smartphone</span> Compare Phones
+                        </a>
                     </div>
                 </div>
             </section>
 
             <!-- Browse Categories -->
-            <section class="py-12 bg-white dark:bg-surface-dark border-t border-slate-100 dark:border-slate-800/50">
+            <section class="py-12 bg-white dark:bg-surface-dark border-t border-slate-100 dark:border-slate-800/50" aria-labelledby="browse-categories-title">
                 <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight mb-8">Browse Categories</h2>
+                    <h2 id="browse-categories-title" class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight mb-8">Browse Categories</h2>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <!-- INTERNAL LINKING: SEO-friendly URLs -->
                         <a href="/phones/" class="group flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-700 border border-transparent hover:border-slate-200 dark:hover:border-slate-600 hover:shadow-lg transition-all duration-300 text-center">
                             <div class="mb-4 p-3 bg-blue-100 dark:bg-blue-900/30 rounded-full text-primary group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-3xl">smartphone</span>
+                                <span class="material-symbols-outlined text-3xl" aria-hidden="true">smartphone</span>
                             </div>
                             <h3 class="font-bold text-slate-900 dark:text-white">Phones</h3>
                             <p class="text-xs text-slate-500 mt-1">200+ Models</p>
                         </a>
                         <a href="/tablets/" class="group flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-700 border border-transparent hover:border-slate-200 dark:hover:border-slate-600 hover:shadow-lg transition-all duration-300 text-center">
                             <div class="mb-4 p-3 bg-green-100 dark:bg-green-900/30 rounded-full text-green-600 group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-3xl">tablet_mac</span>
+                                <span class="material-symbols-outlined text-3xl" aria-hidden="true">tablet_mac</span>
                             </div>
                             <h3 class="font-bold text-slate-900 dark:text-white">Tablets</h3>
                             <p class="text-xs text-slate-500 mt-1">Latest Models</p>
                         </a>
                         <a href="/laptops/" class="group flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-700 border border-transparent hover:border-slate-200 dark:hover:border-slate-600 hover:shadow-lg transition-all duration-300 text-center">
                             <div class="mb-4 p-3 bg-purple-100 dark:bg-purple-900/30 rounded-full text-purple-600 group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-3xl">laptop_mac</span>
+                                <span class="material-symbols-outlined text-3xl" aria-hidden="true">laptop_mac</span>
                             </div>
                             <h3 class="font-bold text-slate-900 dark:text-white">Laptops</h3>
                             <p class="text-xs text-slate-500 mt-1">For Work & Play</p>
                         </a>
                         <a href="/smartwatches/" class="group flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-700 border border-transparent hover:border-slate-200 dark:hover:border-slate-600 hover:shadow-lg transition-all duration-300 text-center">
                             <div class="mb-4 p-3 bg-orange-100 dark:bg-orange-900/30 rounded-full text-orange-600 group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-3xl">watch</span>
+                                <span class="material-symbols-outlined text-3xl" aria-hidden="true">watch</span>
                             </div>
                             <h3 class="font-bold text-slate-900 dark:text-white">Smartwatches</h3>
                             <p class="text-xs text-slate-500 mt-1">Stay Connected</p>
                         </a>
                         <div class="relative overflow-hidden group flex flex-col items-center justify-center p-6 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 cursor-not-allowed text-center opacity-80">
                             <div class="absolute top-3 right-3 text-slate-400">
-                                <span class="material-symbols-outlined text-lg">lock</span>
+                                <span class="material-symbols-outlined text-lg" aria-hidden="true">lock</span>
                             </div>
                             <div class="mb-4 p-3 bg-slate-200 dark:bg-slate-800 rounded-full text-slate-400">
-                                <span class="material-symbols-outlined text-3xl">account_balance</span>
+                                <span class="material-symbols-outlined text-3xl" aria-hidden="true">account_balance</span>
                             </div>
                             <h3 class="font-bold text-slate-500 dark:text-slate-400">Finance</h3>
                             <p class="text-xs font-medium text-primary mt-1 px-2 py-0.5 bg-primary/10 rounded-full">Coming Soon</p>
@@ -155,22 +219,25 @@
             </section>
 
             <!-- Trending Deals -->
-            <section class="py-16 bg-background-light dark:bg-background-dark">
+            <section class="py-16 bg-background-light dark:bg-background-dark" aria-labelledby="trending-deals-title">
                 <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex items-end justify-between mb-8">
                         <div>
-                            <h2 class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight">Trending Deals</h2>
+                            <h2 id="trending-deals-title" class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight">Trending Deals</h2>
                             <p class="text-slate-500 mt-1">Hand-picked offers tailored for you.</p>
                         </div>
-                        <a class="hidden sm:flex items-center text-primary font-semibold hover:underline" href="#">
-                            View all deals <span class="material-symbols-outlined text-lg ml-1">arrow_forward</span>
+                        <a class="hidden sm:flex items-center text-primary font-semibold hover:underline" href="/deals/">
+                            View all deals <span class="material-symbols-outlined text-lg ml-1" aria-hidden="true">arrow_forward</span>
                         </a>
                     </div>
+                    <!-- FUTURE SEO READINESS: This container will be populated with dynamic deal data -->
                     <div class="flex gap-6 overflow-x-auto no-scrollbar pb-4 -mx-4 px-4 sm:mx-0 sm:px-0">
-                        <div class="min-w-[300px] md:min-w-[340px] bg-white dark:bg-surface-dark rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 dark:border-slate-800 flex flex-col">
+                        <!-- SEMANTIC HTML: Product cards as articles -->
+                        <article class="min-w-[300px] md:min-w-[340px] bg-white dark:bg-surface-dark rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 dark:border-slate-800 flex flex-col">
                             <div class="relative h-48 rounded-xl overflow-hidden mb-4 bg-slate-100 dark:bg-slate-800">
                                 <div class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded-md shadow-sm z-10">BEST VALUE</div>
-                                <img src="https://placehold.co/340x192/87CEFA/FFFFFF?text=Laptop" alt="Modern Laptop" class="w-full h-full object-cover">
+                                <!-- ACCESSIBILITY & PERFORMANCE: Descriptive alt text and lazy loading -->
+                                <img src="https://placehold.co/340x192/87CEFA/FFFFFF?text=Laptop" alt="A silver UltraBook X1 laptop on a clean desk." class="w-full h-full object-cover" loading="lazy">
                             </div>
                             <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">UltraBook X1</h3>
                             <p class="text-sm text-slate-500 mb-4">16GB RAM • 1TB SSD • 14" Display</p>
@@ -179,15 +246,15 @@
                                     <p class="text-xs text-slate-400 line-through">$1299</p>
                                     <p class="text-xl font-bold text-primary">$999</p>
                                 </div>
-                                <button class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary dark:hover:bg-slate-200 transition-colors">
+                                <a href="/deals/ultrabook-x1" aria-label="View deal for UltraBook X1" class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary dark:hover:bg-slate-200 transition-colors">
                                     View Deal
-                                </button>
+                                </a>
                             </div>
-                        </div>
-                        <div class="min-w-[300px] md:min-w-[340px] bg-white dark:bg-surface-dark rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 dark:border-slate-800 flex flex-col">
+                        </article>
+                        <article class="min-w-[300px] md:min-w-[340px] bg-white dark:bg-surface-dark rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 dark:border-slate-800 flex flex-col">
                             <div class="relative h-48 rounded-xl overflow-hidden mb-4 bg-slate-100 dark:bg-slate-800">
                                 <div class="absolute top-3 left-3 bg-purple-600 text-white text-xs font-bold px-2 py-1 rounded-md shadow-sm z-10">NEW RELEASE</div>
-                                <img src="https://placehold.co/340x192/6A5ACD/FFFFFF?text=Smartwatch" alt="Sleek Smartwatch" class="w-full h-full object-cover">
+                                <img src="https://placehold.co/340x192/6A5ACD/FFFFFF?text=Smartwatch" alt="A sleek, dark grey ChronoWatch 5 smartwatch." class="w-full h-full object-cover" loading="lazy">
                             </div>
                             <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">ChronoWatch 5</h3>
                             <p class="text-sm text-slate-500 mb-4">Heart Rate • GPS • 7-Day Battery</p>
@@ -196,15 +263,15 @@
                                     <p class="text-xs text-slate-400">&nbsp;</p>
                                     <p class="text-xl font-bold text-primary">$249</p>
                                 </div>
-                                <button class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary dark:hover:bg-slate-200 transition-colors">
+                                <a href="/deals/chronowatch-5" aria-label="View deal for ChronoWatch 5" class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary dark:hover:bg-slate-200 transition-colors">
                                     View Deal
-                                </button>
+                                </a>
                             </div>
-                        </div>
-                        <div class="min-w-[300px] md:min-w-[340px] bg-white dark:bg-surface-dark rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 dark:border-slate-800 flex flex-col">
+                        </article>
+                        <article class="min-w-[300px] md:min-w-[340px] bg-white dark:bg-surface-dark rounded-2xl p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-100 dark:border-slate-800 flex flex-col">
                             <div class="relative h-48 rounded-xl overflow-hidden mb-4 bg-slate-100 dark:bg-slate-800">
                                 <div class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-md shadow-sm z-10">BUNDLE</div>
-                                <img src="https://placehold.co/340x192/FFA07A/FFFFFF?text=Tablet+Bundle" alt="Tablet and Stylus" class="w-full h-full object-cover">
+                                <img src="https://placehold.co/340x192/FFA07A/FFFFFF?text=Tablet+Bundle" alt="A white TabPro 11 tablet bundled with a stylus pen." class="w-full h-full object-cover" loading="lazy">
                             </div>
                             <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">TabPro 11 + Pen</h3>
                             <p class="text-sm text-slate-500 mb-4">128GB Storage • 11" Liquid Display</p>
@@ -213,23 +280,23 @@
                                     <p class="text-xs text-slate-400 line-through">$599</p>
                                     <p class="text-xl font-bold text-primary">$499</p>
                                 </div>
-                                <button class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary dark:hover:bg-slate-200 transition-colors">
+                                <a href="/deals/tabpro-11-bundle" aria-label="View deal for TabPro 11 bundle" class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary dark:hover:bg-slate-200 transition-colors">
                                     View Deal
-                                </button>
+                                </a>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </section>
 
             <!-- Trust & Credibility -->
-            <section class="py-16 bg-white dark:bg-surface-dark border-t border-slate-100 dark:border-slate-800">
+            <section class="py-16 bg-white dark:bg-surface-dark border-t border-slate-100 dark:border-slate-800" aria-labelledby="trust-title">
                 <div class="max-w-[960px] mx-auto px-4 text-center">
-                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-12">Trusted by users worldwide</h2>
+                    <h2 id="trust-title" class="text-2xl font-bold text-slate-900 dark:text-white mb-12">Trusted by users worldwide</h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                         <div class="flex flex-col items-center">
                             <div class="size-16 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary mb-4">
-                                <span class="material-symbols-outlined text-4xl">verified_user</span>
+                                <span class="material-symbols-outlined text-4xl" aria-hidden="true">verified_user</span>
                             </div>
                             <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">100% Secure</h3>
                             <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
@@ -238,20 +305,20 @@
                         </div>
                         <div class="flex flex-col items-center">
                             <div class="size-16 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary mb-4">
-                                <span class="material-symbols-outlined text-4xl">balance</span>
+                                <span class="material-symbols-outlined text-4xl" aria-hidden="true">balance</span>
                             </div>
                             <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Completely Unbiased</h3>
                             <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                                Our comparisons are objective. We don't favor providers, so you get the best deal.
+                                Our comparisons are objective. We don't favor providers, so you always get the best deal.
                             </p>
                         </div>
                         <div class="flex flex-col items-center">
                             <div class="size-16 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary mb-4">
-                                <span class="material-symbols-outlined text-4xl">savings</span>
+                                <span class="material-symbols-outlined text-4xl" aria-hidden="true">savings</span>
                             </div>
-                            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Free to Use</h3>
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Always Free</h3>
                             <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                                Our service is 100% free for users. No hidden fees, no subscriptions, just savings.
+                                Our service is completely free to use, with no hidden fees or charges.
                             </p>
                         </div>
                     </div>
@@ -259,25 +326,41 @@
             </section>
         </main>
 
-        <!-- Footer -->
-        <footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-12">
-            <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div class="flex items-center gap-2">
-                        <div class="size-6 rounded bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300">
-                            <span class="material-symbols-outlined text-sm">compare_arrows</span>
-                        </div>
-                        <span class="text-slate-900 dark:text-white font-bold text-lg">CompareApp</span>
+        <!-- SEMANTIC HTML: Footer -->
+        <footer class="bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+            <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-4">Compare</h4>
+                        <ul class="space-y-3">
+                            <li><a href="/compare/phones/" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Phones</a></li>
+                            <li><a href="/compare/tablets/" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Tablets</a></li>
+                            <li><a href="/compare/laptops/" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Laptops</a></li>
+                            <li><a href="/compare/smartwatches/" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Smartwatches</a></li>
+                        </ul>
                     </div>
-                    <div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-slate-600 dark:text-slate-400">
-                        <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#">About Us</a>
-                        <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
-                        <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#">Privacy Policy</a>
-                        <a class="hover:text-primary dark:hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    <div>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-4">Company</h4>
+                        <ul class="space-y-3">
+                            <li><a href="/about" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">About Us</a></li>
+                            <li><a href="/contact" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Contact</a></li>
+                            <li><a href="/blog" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Blog</a></li>
+                        </ul>
                     </div>
-                    <p class="text-sm text-slate-500 dark:text-slate-500">
-                        © 2024 CompareApp Inc.
-                    </p>
+                    <div>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-4">Legal</h4>
+                        <ul class="space-y-3">
+                            <li><a href="/privacy-policy" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Privacy Policy</a></li>
+                            <li><a href="/terms-of-service" class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-4">Follow Us</h4>
+                        <!-- Placeholder for social links -->
+                    </div>
+                </div>
+                <div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-400">
+                    <p>&copy; 2025 CompareApp. All rights reserved.</p>
                 </div>
             </div>
         </footer>

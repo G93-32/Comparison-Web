@@ -3,81 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compare Tablets - CompareApp</title>
+    <title>Compare Tablets & Find Best Deals | CompareApp</title>
+    <meta name="description" content="Use our free tablet comparison tool to compare the latest iPads, Samsung Galaxy Tabs, and more. Find the best specs, prices, and deals for your next tablet.">
+    <link rel="canonical" href="https://www.compareapp.com/tablets/">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <link rel="stylesheet" href="ta.css">
+    <style>
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+        .page-layout { display: flex; gap: 2rem; padding-top: 2rem; padding-bottom: 2rem;}
+        .filters-sidebar { width: 280px; flex-shrink: 0; }
+        main { flex-grow: 1; }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="../index.html" class="logo">
-                <div class="logo-icon"><span class="material-symbols-outlined">compare_arrows</span></div>
-                <h1 class="logo-text">CompareApp</h1>
+            <a href="../index.html" class="logo" aria-label="Back to CompareApp Homepage">
+                <div class="logo-icon"><span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span></div>
+                <p class="logo-text">CompareApp</p>
             </a>
             <div class="header-actions">
-                <button><span class="material-symbols-outlined">search</span></button>
-                <button><span class="material-symbols-outlined">menu</span></button>
+                <button aria-label="Search"><span class="material-symbols-outlined">search</span></button>
+                <button aria-label="Open Menu"><span class="material-symbols-outlined">menu</span></button>
             </div>
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <h1>Compare Tablets</h1>
-            <div class="filter-section">
+    <div class="page-layout container">
+        <aside class="filters-sidebar">
+            <form>
                 <h2>Filters</h2>
-                <div class="filter-group">
-                    <label for="tablet-brand">Brand</label>
-                    <select id="tablet-brand">
-                        <option>All Brands</option>
-                        <option>Apple</option>
-                        <option>Samsung</option>
-                        <option>Microsoft</option>
-                        <option>Lenovo</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label>Features</label>
-                    <div class="checkbox-group">
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="cellular" name="feature" value="cellular">
-                            <label for="cellular">Cellular</label>
+                <div class="filter-accordion">
+                    <details class="filter-section" open>
+                        <summary>
+                            <span class="section-title">Brand</span>
+                            <span class="material-symbols-outlined icon-toggle">expand_more</span>
+                        </summary>
+                        <div class="filter-content">
+                            <div class="filter-group">
+                                <label for="tablet-brand" class="sr-only">Brand</label>
+                                <select id="tablet-brand">
+                                    <option>All Brands</option>
+                                    <option>Apple</option>
+                                    <option>Samsung</option>
+                                    <option>Microsoft</option>
+                                    <option>Lenovo</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="stylus" name="feature" value="stylus">
-                            <label for="stylus">Stylus Support</label>
+                    </details>
+                    <details class="filter-section" open>
+                        <summary>
+                            <span class="section-title">Features</span>
+                            <span class="material-symbols-outlined icon-toggle">expand_more</span>
+                        </summary>
+                        <div class="filter-content">
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="cellular" name="feature" value="cellular">
+                                    <label for="cellular">Cellular</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="stylus" name="feature" value="stylus">
+                                    <label for="stylus">Stylus Support</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="keyboard" name="feature" value="keyboard">
+                                    <label for="keyboard">Keyboard Compatible</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="keyboard" name="feature" value="keyboard">
-                            <label for="keyboard">Keyboard Compatible</label>
-                        </div>
-                    </div>
+                    </details>
                 </div>
                 <div class="filter-buttons">
-                    <button class="reset-btn">Reset</button>
-                    <button class="apply-btn">Apply Filters</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                    <button type="submit" class="apply-btn">Apply Filters</button>
                 </div>
-            </div>
-            <div class="content-placeholder">
-                <p>Product comparison table and filters will be generated here by JavaScript.</p>
-            </div>
-        </div>
-    </main>
+            </form>
+        </aside>
+
+        <main>
+            <section aria-labelledby="page-title">
+                <h1 id="page-title">Compare Tablets</h1>
+                <p class="page-description">
+                    From entertainment to productivity, find the right tablet for your lifestyle. Compare models from top brands and filter by features like cellular connectivity and stylus support.
+                </p>
+            </section>
+            <section aria-labelledby="comparison-results-title">
+                <h2 id="comparison-results-title" class="sr-only">Comparison Results</h2>
+                <div class="content-placeholder">
+                    <p>Your product comparison table will appear here after selecting models.</p>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <div class="container">
-            <div class="footer-logo">
-                <div class="logo-icon"><span class="material-symbols-outlined">compare_arrows</span></div>
-                <span class="logo-text">CompareApp</span>
+            <nav class="footer-nav" aria-label="Footer Navigation">
+                <div class="footer-category-links">
+                    <h3>Compare</h3>
+                    <a href="../phones/index.html">Phones</a>
+                    <a href="../tablets/index.html">Tablets</a>
+                    <a href="../laptops/index.html">Laptops</a>
+                    <a href="../smartwatches/index.html">Smartwatches</a>
+                </div>
+                <div class="footer-company-links">
+                    <h3>Company</h3>
+                    <a href="../about.html">About Us</a>
+                    <a href="../contact.html">Contact</a>
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <div class="logo-icon"><span class="material-symbols-outlined" aria-hidden="true">compare_arrows</span></div>
+                    <span class="logo-text">CompareApp</span>
+                </div>
+                <p class="copyright">© 2025 CompareApp Inc. All rights reserved.</p>
             </div>
-            <div class="footer-links">
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-            </div>
-            <p class="copyright">© 2024 CompareApp Inc.</p>
         </div>
     </footer>
 </body>
