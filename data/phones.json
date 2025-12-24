@@ -1,12 +1,35 @@
 [
     {
         "id": 1,
-        "name": "Example Phone",
-        "brand": "TechBrand",
+        "name": "iPhone 15 Pro",
+        "brand": "Apple",
         "specs": {
-            "display": "6.5-inch OLED",
+            "display": "6.1-inch Super Retina XDR",
             "camera": "48MP",
-            "battery": "4000mAh"
+            "battery": "3274mAh",
+            "price": "$999"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Samsung Galaxy S24 Ultra",
+        "brand": "Samsung",
+        "specs": {
+            "display": "6.8-inch Dynamic AMOLED 2X",
+            "camera": "200MP",
+            "battery": "5000mAh",
+            "price": "$1199"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Google Pixel 8 Pro",
+        "brand": "Google",
+        "specs": {
+            "display": "6.7-inch LTPO OLED",
+            "camera": "50MP",
+            "battery": "5050mAh",
+            "price": "$999"
         }
     }
 ]

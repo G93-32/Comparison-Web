@@ -1,12 +1,38 @@
 [
     {
         "id": 1,
-        "name": "Example Smartwatch",
-        "brand": "TechBrand",
+        "name": "Apple Watch Series 9",
+        "brand": "Apple",
         "features": {
-            "display": "1.4-inch AMOLED",
+            "display": "1.9-inch Retina",
             "heart_rate_monitor": true,
-            "gps": true
+            "gps": true,
+            "battery_life": "18 hours",
+            "price": "$399"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Samsung Galaxy Watch 6",
+        "brand": "Samsung",
+        "features": {
+            "display": "1.5-inch Super AMOLED",
+            "heart_rate_monitor": true,
+            "gps": true,
+            "battery_life": "40 hours",
+            "price": "$399"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Garmin Fenix 7",
+        "brand": "Garmin",
+        "features": {
+            "display": "1.3-inch MIP",
+            "heart_rate_monitor": true,
+            "gps": true,
+            "battery_life": "57 days",
+            "price": "$699"
         }
     }
 ]

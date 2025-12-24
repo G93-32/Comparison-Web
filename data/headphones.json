@@ -1,12 +1,38 @@
 [
     {
         "id": 1,
-        "name": "Example Headphones",
-        "brand": "TechBrand",
+        "name": "Sony WH-1000XM5",
+        "brand": "Sony",
         "type": "Over-ear",
         "features": {
             "noise_cancellation": true,
-            "battery_life": "20 hours"
+            "battery_life": "30 hours",
+            "wireless": true,
+            "price": "$399"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Bose QuietComfort 45",
+        "brand": "Bose",
+        "type": "Over-ear",
+        "features": {
+            "noise_cancellation": true,
+            "battery_life": "24 hours",
+            "wireless": true,
+            "price": "$329"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Apple AirPods Max",
+        "brand": "Apple",
+        "type": "Over-ear",
+        "features": {
+            "noise_cancellation": true,
+            "battery_life": "20 hours",
+            "wireless": true,
+            "price": "$549"
         }
     }
 ]

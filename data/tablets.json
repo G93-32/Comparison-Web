@@ -1,12 +1,35 @@
 [
     {
         "id": 1,
-        "name": "Example Tablet",
-        "brand": "TechBrand",
+        "name": "iPad Pro 12.9-inch",
+        "brand": "Apple",
         "specs": {
-            "display": "10.2-inch Retina",
+            "display": "12.9-inch Liquid Retina XDR",
             "storage": "128GB",
-            "processor": "A14 Bionic"
+            "processor": "M2",
+            "price": "$1099"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Samsung Galaxy Tab S9 Ultra",
+        "brand": "Samsung",
+        "specs": {
+            "display": "14.6-inch Dynamic AMOLED 2X",
+            "storage": "256GB",
+            "processor": "Snapdragon 8 Gen 2",
+            "price": "$1199"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Microsoft Surface Pro 9",
+        "brand": "Microsoft",
+        "specs": {
+            "display": "13-inch PixelSense",
+            "storage": "256GB SSD",
+            "processor": "Intel Core i7",
+            "price": "$999"
         }
     }
 ]
