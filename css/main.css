@@ -1,0 +1,327 @@
+/* General Body and Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-icon {
+    background-color: #3b82f6;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon .material-symbols-outlined {
+    font-size: 24px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-actions button:hover {
+    background-color: #f3f4f6;
+}
+
+.header-actions .material-symbols-outlined {
+    font-size: 26px;
+    color: #4b5563;
+}
+
+/* Main Content Placeholder */
+.content-placeholder {
+    border: 2px dashed #d1d5db;
+    border-radius: 0.75rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.content-placeholder p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Page Layout */
+.page-layout {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Filters Sidebar */
+.filters-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    align-self: flex-start;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.filters-sidebar h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1rem;
+}
+
+.filter-accordion .filter-section {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-accordion .filter-section:last-child {
+    border-bottom: none;
+}
+
+.filter-accordion summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.filter-accordion summary:hover {
+    color: #3b82f6;
+}
+
+.filter-accordion .icon-toggle {
+    transition: transform 0.2s;
+}
+
+.filter-accordion details[open] > summary .icon-toggle {
+    transform: rotate(180deg);
+}
+
+.filter-content {
+    padding-bottom: 1.5rem;
+}
+
+.filter-group {
+    margin-bottom: 1rem;
+}
+
+.filter-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.filter-group select,
+.filter-group input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #f9fafb;
+}
+
+.checkbox-group .checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.checkbox-group .checkbox-item:last-child {
+    margin-bottom: 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    accent-color: #3b82f6;
+}
+
+.filter-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.filter-buttons button {
+    flex-grow: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.apply-btn {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+.apply-btn:hover {
+    background-color: #2563eb;
+}
+
+.reset-btn {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.reset-btn:hover {
+    background-color: #d1d5db;
+}
+
+/* Page Title and Description */
+#page-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.page-description {
+    font-size: 1.125rem;
+    color: #6b7280;
+    max-width: 80ch;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #e5e7eb;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-category-links h3,
+.footer-company-links h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.footer-nav a:hover {
+    color: #3b82f6;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.copyright {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.animated-logo-text {
+    background-image: linear-gradient(
+        -225deg,
+        #3b82f6 0%,
+        #9333ea 29%,
+        #ec4899 67%,
+        #f59e0b 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-gradient-animation 3s linear infinite;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+@keyframes text-gradient-animation {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.animated-logo-text:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}

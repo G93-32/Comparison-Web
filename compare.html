@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Metadata -->
+    <title>Compare Phones, Tablets, Laptops & Smartwatches | CompareApp</title>
+    <meta name="description" content="Use the CompareApp tool to compare the latest tech gadgets side-by-side. Find the best phones, tablets, laptops, and smartwatches based on features, price, and performance.">
+    <link rel="canonical" href="https://www.compareapp.com/compare.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.compareapp.com/compare.html">
+    <meta property="og:title" content="Compare Phones, Tablets, Laptops & Smartwatches | CompareApp">
+    <meta property="og:description" content="The ultimate tool for comparing tech gadgets. Make an informed decision on your next purchase.">
+    <meta property="og:image" content="https://www.compareapp.com/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.compareapp.com/compare.html">
+    <meta property="twitter:title" content="Compare Phones, Tablets, Laptops & Smartwatches | CompareApp">
+    <meta property="twitter:description" content="The ultimate tool for comparing tech gadgets. Make an informed decision on your next purchase.">
+    <meta property="twitter:image" content="https://www.compareapp.com/assets/og-image.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/compare.css">
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="logo-icon bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined">compare</span>
+                </div>
+                <h1 class="text-2xl font-extrabold text-gray-800 animated-logo-text">CompareApp</h1>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="compare.html?category=phones" class="text-gray-600 hover:text-blue-600 transition">Phones</a>
+                <a href="compare.html?category=laptops" class="text-gray-600 hover:text-blue-600 transition">Laptops</a>
+                <a href="compare.html?category=tablets" class="text-gray-600 hover:text-blue-600 transition">Tablets</a>
+                <a href="compare.html?category=smartwatches" class="text-gray-600 hover:text-blue-600 transition">Smartwatches</a>
+                <a href="compare.html?category=headphones" class="text-gray-600 hover:text-blue-600 transition">Headphones</a>
+            </nav>
+            <div class="flex items-center space-x-2">
+                <button aria-label="Search" class="p-2 rounded-full hover:bg-gray-100">
+                    <span class="material-symbols-outlined text-gray-600">search</span>
+                </button>
+                <button aria-label="Toggle dark mode" class="p-2 rounded-full hover:bg-gray-100">
+                    <span class="material-symbols-outlined text-gray-600">dark_mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="tool-intro" aria-labelledby="main-heading">
+            <h1 id="main-heading" class="text-4xl font-extrabold text-gray-900 mb-4">Dynamic Tech Comparison Tool</h1>
+            <p class="text-lg text-gray-600 max-w-4xl">
+                Welcome to the ultimate comparison tool for tech enthusiasts. Whether you're looking to <strong>compare phones</strong>, find the best tablet, or need a comprehensive <strong>laptop comparison tool</strong>, we've got you covered. This page allows you to dynamically filter and compare specifications for multiple categories, including our popular <strong>tablet comparison</strong> and <strong>compare smartwatches</strong> sections. All the information is presented in a clear, crawlable format to help both you and search engines understand the data.
+            </p>
+        </section>
+
+        <nav id="category-tabs" class="mt-12 border-b border-gray-200" aria-label="Product Categories">
+            <div class="flex space-x-8">
+                <button role="tab" aria-selected="true" aria-controls="phones-panel" id="phones-tab" class="category-tab active-tab">Phones</button>
+                <button role="tab" aria-selected="false" aria-controls="tablets-panel" id="tablets-tab" class="category-tab">Tablets</button>
+                <button role="tab" aria-selected="false" aria-controls="laptops-panel" id="laptops-tab" class="category-tab">Laptops</button>
+                <button role="tab" aria-selected="false" aria-controls="smartwatches-panel" id="smartwatches-tab" class="category-tab">Smartwatches</button>
+            </div>
+        </nav>
+
+        <div class="page-layout mt-8">
+            <aside class="filters-sidebar">
+                <h2 class="text-xl font-bold mb-6">Filters</h2>
+                <!-- Filters will be dynamically populated here by JS -->
+                <div id="filters-container">
+                    <p class="text-gray-500">Select a category to see available filters.</p>
+                </div>
+            </aside>
+
+            <div class="results-content flex-grow">
+                <div id="phones-panel" role="tabpanel" tabindex="0" aria-labelledby="phones-tab" class="category-panel">
+                    <section id="phones-content" aria-labelledby="phones-heading">
+                        <h2 id="phones-heading" class="text-2xl font-bold text-gray-800 mb-4">Compare Smartphones</h2>
+                        <article class="comparison-results">
+                            <p class="text-gray-600">Select products and filters to see a detailed phone comparison. Placeholder for crawlable content about phone comparisons.</p>
+                        </article>
+                    </section>
+                </div>
+                <div id="tablets-panel" role="tabpanel" tabindex="0" aria-labelledby="tablets-tab" class="category-panel" hidden>
+                    <section id="tablets-content" aria-labelledby="tablets-heading">
+                        <h2 id="tablets-heading" class="text-2xl font-bold text-gray-800 mb-4">Compare Tablets</h2>
+                        <article class="comparison-results">
+                            <p class="text-gray-600">Select products and filters to see a detailed tablet comparison. Placeholder for crawlable content about tablet comparisons.</p>
+                        </article>
+                    </section>
+                </div>
+                <div id="laptops-panel" role="tabpanel" tabindex="0" aria-labelledby="laptops-tab" class="category-panel" hidden>
+                    <section id="laptops-content" aria-labelledby="laptops-heading">
+                        <h2 id="laptops-heading" class="text-2xl font-bold text-gray-800 mb-4">Compare Laptops</h2>
+                        <article class="comparison-results">
+                            <p class="text-gray-600">Select products and filters to see a detailed laptop comparison. Placeholder for crawlable content about laptop comparisons.</p>
+                        </article>
+                    </section>
+                </div>
+                <div id="smartwatches-panel" role="tabpanel" tabindex="0" aria-labelledby="smartwatches-tab" class="category-panel" hidden>
+                    <section id="smartwatches-content" aria-labelledby="smartwatches-heading">
+                        <h2 id="smartwatches-heading" class="text-2xl font-bold text-gray-800 mb-4">Compare Smartwatches</h2>
+                        <article class="comparison-results">
+                            <p class="text-gray-600">Select products and filters to see a detailed smartwatch comparison. Placeholder for crawlable content about smartwatch comparisons.</p>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Categories</h3>
+                    <nav class="space-y-2">
+                        <a href="compare.html?category=phones" class="block text-gray-400 hover:text-white">Phones</a>
+                        <a href="compare.html?category=laptops" class="block text-gray-400 hover:text-white">Laptops</a>
+                        <a href="compare.html?category=tablets" class="block text-gray-400 hover:text-white">Tablets</a>
+                        <a href="compare.html?category=smartwatches" class="block text-gray-400 hover:text-white">Smartwatches</a>
+                        <a href="compare.html?category=headphones" class="block text-gray-400 hover:text-white">Headphones</a>
+                    </nav>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Company</h3>
+                    <nav class="space-y-2">
+                        <a href="#" class="block text-gray-400 hover:text-white">About Us</a>
+                        <a href="#" class="block text-gray-400 hover:text-white">Contact</a>
+                        <a href="#" class="block text-gray-400 hover:text-white">Privacy Policy</a>
+                        <a href="#" class="block text-gray-400 hover:text-white">Terms of Service</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <div class="logo-icon bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center">
+                            <span class="material-symbols-outlined text-xl">compare</span>
+                        </div>
+                        <span class="text-lg font-bold">CompareApp</span>
+                    </a>
+                </div>
+                <p class="text-gray-400">&copy; 2025 CompareApp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/compare.js"></script>
+</body>
+</html>
